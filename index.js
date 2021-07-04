@@ -7,6 +7,11 @@ const mongoose = require("mongoose");
 //Database
 const database = require("./database/index");
 
+//Models
+const BookModel = require("./database/book");
+const AuthorModel = require("./database/author");
+const PublicationModel = require("./database/publication");
+
 //Initialization
 const booky = express();
 
@@ -31,8 +36,7 @@ Parameter                None
 Method                   GET
 */
 
-booky.get("/",(req, res) => {
-    
+booky.get("/",(req, res) => {    
     return res.json({books:database.books});   
 });
 
