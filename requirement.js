@@ -18,16 +18,16 @@
 //we need an API 
 
 //GET:
-//to get all books✅
-//to get specific books(ISBN)✅
-//to get list of books based on category✅
-//to get list of book based on languages✅
+//to get all books✅📌
+//to get specific books(ISBN)✅📌
+//to get list of books based on category✅📌
+//to get list of book based on languages✅📌
 
 //POST:
-//Add new book✅
+//Add new book✅📌
 
 //PUT:
-//Update Book title✅
+//Update Book title✅📌
 //Update/add new author for a book✅
 
 //DELETE:
@@ -40,12 +40,13 @@
 //we need an API
 
 //GET:
-//to get all author✅
-//to get specific author✅
-//to get list of author based on book✅
+//to get all author✅📌
+//to get specific author✅📌
+//to get list of author based on book✅📌
+
 
 //POST:
-//Add new author✅
+//Add new author✅📌
 
 //PUT:
 //Update author name using it's id ✅
@@ -59,12 +60,12 @@
 //we need an API
 
 //GET:
-//to get all publication✅
-//to get specific publication✅
-//to get list of publication based on book✅
+//to get all publication✅📌
+//to get specific publication✅📌
+//to get list of publication based on book✅📌
 
 //POST:
-//ADD new publication✅
+//ADD new publication✅📌
 
 //PUT:
 //Update the publication name using it's id ✅

@@ -6,7 +6,7 @@ let books = [
         language:"English",
         numpage:"250",
         author:[1,2],
-        publication:[1],
+        publication:1,
         category:["tech","programming","education","thrillar"],
     },
 
