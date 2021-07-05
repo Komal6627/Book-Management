@@ -359,15 +359,26 @@ Parameter                authorId
 Method                   PUT
 */
 
-booky.put("/author/update/name/:authorId", (req, res) => {
-    database.author.forEach((author) => {
-      if (author.id === parseInt(req.params.authorId)) {
-        author.name = req.body.newAuthorName;
-        return;
+booky.put("/author/update/name/:authorId",async (req, res) => {
+    const updatedAuthor = await AuthorModel.findOneAndUpdate(
+      {
+          id:parseInt(req.params.authorId),
+      },
+      {
+          name:req.body.authorName,
+      },
+      {
+          new:true
       }
-    });
+    );
+    // database.author.forEach((author) => {
+    //   if (author.id === parseInt(req.params.authorId)) {
+    //     author.name = req.body.newAuthorName;
+    //     return;
+    //   }
+    // });
   
-    return res.json({ author: database.author});
+    return res.json({ authors:updatedAuthor});
   });
 
  /* Route                /publication/update/name
@@ -521,15 +532,20 @@ Parameter                authorId
 Method                   DELETE
 */
 
-booky.delete("/author/delete/:authorId",(req,res) => {
-  const updatedAuthorDatabase = database.author.filter(
-  (author) => author.id !== parseInt(req.params.authorId)
-  );
+booky.delete("/author/delete/:authorId",async(req,res) => {
+    const updatedAuthor = await AuthorModel.findOneAndDelete(
+      {
+        id:parseInt(req.params.authorId),
+      }
+    );
+  // const updatedAuthorDatabase = database.author.filter(
+  // (author) => author.id !== parseInt(req.params.authorId)
+  // );
 
 //filter will return new array
 
-  database.author =  updatedAuthorDatabase ;
-  return res.json({author: updatedAuthorDatabase});
+  // database.author =  updatedAuthorDatabase ;
+  return res.json({authors: updatedAuthor});
 });
 
  /* Route                /publication/delete

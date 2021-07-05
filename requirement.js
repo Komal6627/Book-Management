@@ -32,7 +32,7 @@
 
 //DELETE:
 //delete a book✅📌
-//delete an author from a book✅
+//delete an author from a book✅📌
 
 
 //Author
@@ -49,10 +49,10 @@
 //Add new author✅📌
 
 //PUT:
-//Update author name using it's id ✅
+//Update author name using it's id ✅📌
 
 //DELETE:
-//Delete an author✅
+//Delete an author using its id✅📌
 
 
 //publication
