@@ -68,11 +68,11 @@
 //ADD new publication✅📌
 
 //PUT:
-//Update the publication name using it's id ✅
-//Update/add book for publication
+//Update the publication name using it's id ✅📌
+//Update/add book for publication✅📌
 
 //DELETE:
-//DELETE the publication✅
+//DELETE the publication✅📌
 //Delete book from publication✅
 
 

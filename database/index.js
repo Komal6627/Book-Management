@@ -56,7 +56,7 @@ const publication = [
     {
         id:2,
         name:"Technology",
-        books:["123Book"],
+        books:[],
     },
 
     {
